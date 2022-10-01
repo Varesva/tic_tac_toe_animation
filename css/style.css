@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+	/* width: 100%; */
+	height: auto;
+	margin: 0;
+	padding: 0;
+	/* border: 1px solid black; */
+}
+
+#siteContainer {
+	min-height: 100vh;
+	height: 100%;
+}
+
+header {
+	background-color: #d7cff9;
+}
+
+header,
+footer {
+	padding: 1rem;
+	width: 100%;
+}
+
+footer {
+	line-height: 1.45rem;
+	color: #20134b;
+	background-color: #f5f2ff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 5rem;
+	max-height: 5rem;
+	font-size: 0.95rem;
+}

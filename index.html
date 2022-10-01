@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="Varesva">
+    <meta name="author" content="Justine Tavares Vaz">
+    <meta name="description" content="Coder un morpion en Javascript, HTML et CSS">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pop_up.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <title>Tic-Tac-Toe | Varesva</title>
+</head>
+<body>
+    <div id="leftMargin">
+    </div>
+    <div id="mainContent">    
+        <main id="siteContainer">    
+            
+            <header>
+                <nav>
+                    <h1>Tic-Tac-Toe</h1>
+                </nav>
+            </header>
+            <div class="btnContainer">
+               <button class="btnRules" onclick="readRules()">Instructions</button>
+            </div>
+            
+            <!-- OVERLAY -->
+            <div id="overlay"></div>
+            <!-- Welcome pop-up -->
+            <div id="showPopup" class="rulesPopup">
+                <span id="closeRules">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="22" height="22"
+                        viewBox="0 0 50 50">
+                            <path d="M 25 2 C 12.309534 2 2 12.309534 2 25 C 2 37.690466 12.309534 48 25 48 C 37.690466 48 48 37.690466 48 25 C 48 12.309534 37.690466 2 25 2 z M 25 4 C 36.609534 4 46 13.390466 46 25 C 46 36.609534 36.609534 46 25 46 C 13.390466 46 4 36.609534 4 25 C 4 13.390466 13.390466 4 25 4 z M 32.990234 15.986328 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.990234 15.986328 z"></path>
+                    </svg>
+                </span>
+                <h1>Instructions</h1>
+                <p>
+                    Le but du jeu <span class="bold">Tic-Tac-Toe (jeu du Morpion)</span> est d'aligner avant son adversaire 3 symboles identiques horizontalement, verticalement ou en diagonale.
+                </p>
+                <div class="btnContainer">
+                    <button id="startGame" class="btnStart">À vous de jouer !</button>
+                </div>
+            </div>
+            
+        </main>
+        <footer> 
+            <p>
+                Fait avec passion - &copy<span><a href="https://www.linkedin.com/in/justine-tavares-vaz-994963190" class="bold">Varesva</a></span> <br>
+                Tous droits réservés, <span id="copyrightYear">2022</span>
+            </p>
+        </footer>
+    </div>
+    <!-- JAVASCRIPT -->
+    <script src="./script.js"></script>
+</body>
+</html>

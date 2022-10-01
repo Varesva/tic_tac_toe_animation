@@ -1,0 +1,87 @@
+#showPopup {
+	z-index: 5;
+}
+
+.rulesPopup {
+	/* position: absolute; */
+	background-color: rgb(219, 216, 225, 0.6);
+	border-radius: 15px;
+	width: 90%;
+	text-align: center;
+	min-width: 250px;
+	max-width: 750px;
+	margin: auto;
+	padding: 0.75rem 1rem;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 70px -10px,
+		rgba(0, 0, 0, 0.25) 0px 20px 30px -20px,
+		rgba(10, 37, 64, 0.25) 0px -2px 6px 0px inset;
+}
+
+@media screen and (max-width: 250px) {
+	.rulesPopup {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 375px) {
+	.rulesPopup {
+		text-align: inherit;
+		padding: 1.5rem 1.75rem;
+	}
+}
+
+#closeRules {
+	display: flex;
+	justify-content: flex-end;
+	cursor: pointer;
+}
+
+#closeRules > svg {
+	fill: #20134b;
+}
+
+#closeRules > svg:hover {
+	width:23px;
+	height: 23px;
+	background-color: #F5F2FF;
+	border-radius: 50%;
+}
+
+button.btnStart {
+	padding: 15px 20px;
+	background-color: #b4a7eb;
+	color: #20134b;
+	font-weight: 600;
+	font-size: 1.15rem;
+	border-radius: 25px;
+	border: 0.5px solid #5746af;
+	margin: .75rem 1rem;
+}
+
+/* Centrer les boutons */
+.btnContainer {
+	display: flex;
+	justify-content: center;
+}
+
+button.btnRules {
+	padding: 10px 15px;
+	background-color: #F5F2FF;
+	color: #281C4F;
+	font-weight: 600;
+	font-size: .85rem;
+	border-radius: 25px;
+	border: 0.5px solid #5746AF;
+	/* margin: .75rem 1rem; */
+}
+
+#overlay {
+  position: fixed;
+  z-index: 2; 
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
