@@ -47,20 +47,28 @@
                     <button id="startGame" class="btnStart">À vous de jouer !</button>
                 </div>
             </div>
+
             <div class="playerContainer">
-                <div class="playerChoice playOne">
-                    <button class="player">
-                        Player 1
-                    </button>
-                    <button class="dotPlayer">
-                    </button>
+                <div class="playerChoice">
+                    <label class="customCheck playOne" for="">
+
+                        <span class="player">
+                            Player 1
+                        </span>
+
+                        <input type="radio" name="dotPlayerChoice" class="dotPlayer" id="playerCheck" checked>
+
+                    </label>
+
                 </div>
-                <div class="playerChoice playTwo">
-                    <button class="dotPlayer">
-                    </button>
-                    <button class="player">
-                        Player 2
-                    </button>
+
+                <div class="playerChoice">
+                    <label class="customCheck playTwo" for="">
+                        <input type="radio" name="dotPlayerChoice" id="playerCheck" class="dotPlayer">
+                        <span class="player">
+                            Player 2
+                        </span>
+                    </label>
                 </div>
             </div>
         </main>
