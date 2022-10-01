@@ -1,0 +1,60 @@
+button.player {
+	padding: 11px 22px;
+	border-radius: 10px;
+	font-weight: 600;
+	font-size: 0.75rem;
+}
+
+div.playOne > .player {
+	background-color: #ee9d2b;
+	border: 1px solid #ad5700;
+	color: #35290f;
+}
+
+div.playOne > .dotPlayer {
+	background-color: #ee9d2b;
+}
+
+div.playTwo > .player {
+	background-color: #ffcc00;
+	border: 1px solid #946800;
+	color: #4e2009;
+}
+
+div.playTwo > .dotPlayer {
+	background-color: #ffcc00;
+}
+
+button.dotPlayer {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+    margin: 0px 10px;
+}
+
+.playerContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 1rem;
+}
+
+.playerChoice {
+	display: flex;
+	align-items: center;
+}
+
+@media screen and (min-width: 500px) {
+	button.player {
+		padding: 15px 25px;
+		font-size: 1rem;
+		margin: 1rem;
+	}
+
+	button.dotPlayer {
+		width: 35px;
+		height: 35px;
+		background-color: #2e1b01;
+		border-radius: 50%;
+	}
+}
