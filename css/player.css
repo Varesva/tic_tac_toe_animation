@@ -34,12 +34,12 @@ label.customCheck > input.dotPlayer {
 
 .playerContainer {
 	display: flex;
+	width: 90%;
 	flex-direction: row;
 	justify-content: space-between;
-	margin: 1rem;
+	margin: 2.5rem auto 2rem;
 }
 
-.playerChoice,
 .customCheck {
 	display: flex;
 	align-items: center;
